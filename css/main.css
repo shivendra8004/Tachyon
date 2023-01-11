@@ -452,8 +452,9 @@ h2 {
 .moiText-1 {
   top: 0%;
   max-width: 95%;
-  text-align: right;
+  text-align: center;
   transform: none;
+  position: relative;
 }
 .moiText-2 {
   top: 22%;
@@ -577,11 +578,11 @@ h2 {
   justify-content: space-between;
   gap: 29.2rem;
   position: fixed;
-  top: 1.2rem;
+  top: 0.8rem;
 }
 nav a {
   text-decoration: none;
-  color: white;
+  color: #ff4054;
   font-family: "Comfortaa", sans-serif;
 }
 .links {
