@@ -1,0 +1,544 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-size: calc(1.01vw + 1.43vh);
+}
+
+body {
+  margin: 0;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.Log {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  color: white;
+  line-height: 1;
+  pointer-events: none;
+}
+
+
+.Parallax {
+  --p: 120;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-perspective: calc(var(--p) * 1px);
+          perspective: calc(var(--p) * 1px);
+  -webkit-perspective-origin-x: 100%;
+          perspective-origin-x: 100%;
+}
+.Parallax_Scroll {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  will-change: transform;
+}
+.Parallax_Preserve {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.Parallax_Layer {
+  --t: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin-x: 100%;
+          transform-origin-x: 100%;
+  -webkit-transform: translateZ(calc(var(--t) * 1px)) scale(calc(1 + (var(--t) * -1) / var(--p)));
+          transform: translateZ(calc(var(--t) * 1px)) scale(calc(1 + (var(--t) * -1) / var(--p)));
+}
+
+
+.Scene {
+  position: relative;
+  min-height: 100vh;
+  padding: 5vw;
+}
+
+
+p, ul {
+  margin-top: 0;
+  margin-bottom: 5vw;
+}
+
+p {
+  text-align: justify;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+  margin-bottom: 2.5vw;
+  font-size: max(1.6rem, 4vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+.Svg {
+  display: block;
+}
+
+
+.Positioner {
+  position: absolute;
+}
+
+/* Scene 1 */
+
+#s-mars-surface > g, #s-mars-shadow,
+#s-orbiter-spacecraft {
+  will-change: transform;
+}
+
+.Title, .SubTitle, .Lead, .Tip {
+  position: absolute;
+  margin: 0;
+  text-align: initial;
+}
+
+.Title {
+  top: 6vw;
+  left: 5vw;
+  margin-right: 12rem;
+  color: #ff4054;
+  font-size: 3.375rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.SubTitle {
+  top: 6vw;
+  right: 5vw;
+  color: #ff4054;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+.Lead {
+  left: 5vw;
+  top: max(55vmin - (50vmax - (100vmax - 100vmin)) * 0.2, 13rem);
+  font-size: 1.625rem;
+  font-weight: 300;
+  width: calc(12ch + (100vmax - 100vh) * 0.3);
+}
+
+.Tip {
+  left: 5vw;
+  bottom: 4vw;
+  font-size: 1rem;
+  font-weight: 300;
+  transform: translateY(calc(100% + 4vw));
+  animation: scrollTip 1s cubic-bezier(0, 0, 0, 1) 9s forwards;
+  transition: opacity 1s;
+}
+@keyframes scrollTip {
+  to {
+    transform: translateY(0px);
+  }
+}
+@media (min-aspect-ratio: 39/20) {
+  .Tip {
+    display: none;
+  }
+}
+
+.Positioner-mars {
+  left: 67vw;
+  top: 66vh;
+  width:  calc(61vh + (100vmax - 100vh) * 0.3);
+  height: calc(61vh + (100vmax - 100vh) * 0.3);
+  transform: translate(-50%, -50%);
+}
+
+.Parallax_Layer-orbiter {
+  animation: Parallax_Layer-orbiter 50s linear infinite;
+}
+@keyframes Parallax_Layer-orbiter {
+  0%   { transform: translateZ(30px) scale(calc(1 + -30 / 120)); }
+
+  15%  { transform: translateZ(50px) scale(calc(1 + -50 / 120)); }
+  35%  { transform: translateZ(50px) scale(calc(1 + -50 / 120)); }
+
+  50%  { transform: translateZ(30px) scale(calc(1 + -30 / 120)); }
+
+  65%  { transform: translateZ(10px) scale(calc(1 + -10 / 120)); }
+  85%  { transform: translateZ(10px) scale(calc(1 + -10 / 120)); }
+
+  100% { transform: translateZ(30px) scale(calc(1 + -30 / 120)); }
+}
+
+.Positioner-orbiter {
+  left: 67vw;
+  top: 66vh;
+  width:  calc(61vh + (100vmax - 100vh) * 0.3);
+  height: calc(61vh + (100vmax - 100vh) * 0.3);
+  transform: translate(-50%, -50%);
+  transform-origin: 150%;
+  animation: Positioner-orbiter 8s cubic-bezier(0, 0.2, 0, 1) forwards;
+}
+@keyframes Positioner-orbiter {
+  0% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+
+/* Scene 2 */
+.Scene-2 {
+  background-color: #300361;
+}
+
+.Scene-2 > p:last-child {
+  margin-bottom: 0;
+}
+
+.Svg-trajectory {
+  max-width: 85vh;
+  margin: auto;
+  margin-top: -1.5vw;
+  margin-bottom: 5vw;
+}
+
+#s-trajectory-earth, #s-trajectory-earthSurface,
+#s-trajectory-mars, #s-trajectory-marsSurface,
+#s-trajectory-spacecraft {
+  will-change: transform;
+}
+
+
+/* Scene 3 */
+
+.Scene-3 {
+  height: 150vh;
+}
+
+.Svg-launch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#s-launch-rocket, #s-launch-side1, #s-launch-side2,
+#s-launch-stand1, #s-launch-stand2, #s-launch-bigStand,
+#s-launch-tower1, #s-launch-tower2, #s-launch-stage,
+#s-launch-tower1Light, #s-launch-tower2Light,
+#s-launch-mainFlame, #s-launch-side1Flame, #s-launch-side2Flame {
+  will-change: transform;
+}
+
+#s-launch-tower1 {
+  transform-origin: 252px 765px;
+}
+#s-launch-tower2 {
+  transform-origin: 756px 765px;
+}
+
+#s-launch-tower1Light, #s-launch-tower2Light {
+  transition: transform 0.3s;
+}
+#s-launch-tower1Light {
+  transform-origin: 252px 461px;
+}
+#s-launch-tower2Light {
+  transform-origin: 756px 461px;
+}
+
+#s-launch-stand1 {
+  transform-origin: 440px 710px;
+}
+#s-launch-stand2 {
+  transform-origin: 548px 710px;
+}
+
+.RocketSmoke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* display: none; */
+}
+
+
+/* Scene 4 */
+.Scene-4 {
+  background: #21146b;
+}
+
+
+/* Scene 5 */
+.Scene-5 {
+  height: 100vh;
+  min-height: 200vw;
+}
+
+.Svg-moiBg {}
+
+.Svg-moiFg {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+}
+
+#s-moi-spacecraft, #s-moi-spacecraftFire,
+#s-moi-marsSurface, #s-moi-marsShadow {
+  will-change: transform;
+}
+
+.moiText {
+  position: absolute;
+  right: 0;
+  max-width: 60%;
+  padding: 5vw;
+  transform: translate(0, -50%);
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.moiText-active {
+  opacity: 1;
+}
+
+.moiText > h2 {
+  margin: 0;
+  font-size: max(2.4rem, 6vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.moiText > h3 {
+  margin: 0;
+  font-size: max(1.4rem, 3.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.moiText p {
+  margin: 0;
+  font-size: max(0.8rem, 2vw);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.moiText > p {
+  transform: translateY(1.5em);
+  transition: transform 0.5s;
+}
+.moiText-active > p {
+  transform: translateY(0em);
+}
+
+.moiText_Ticker {
+  display: grid;
+}
+.moiText_TickerItem {
+  grid-column: 1;
+  grid-row: 1;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.moiText-3.moiText-active .moiText_TickerItem:nth-child(1) {
+  animation: tick4 24s ease 0s infinite;
+}
+.moiText-3.moiText-active .moiText_TickerItem:nth-child(2) {
+  animation: tick4 24s ease 6s infinite;
+}
+.moiText-3.moiText-active .moiText_TickerItem:nth-child(3) {
+  animation: tick4 24s ease 12s infinite;
+}
+.moiText-3.moiText-active .moiText_TickerItem:nth-child(4) {
+  animation: tick4 24s ease 18s infinite;
+}
+@keyframes tick4 {
+  0% {
+    opacity: 0;
+    transform: translateY(1.5em);
+  }
+  2% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  27% {
+    opacity: 0;
+    transform: translateY(-1.5em);
+  }
+}
+
+.moiText-4.moiText-active .moiText_TickerItem:nth-child(1) {
+  animation: tick2 10s ease 0s infinite;
+}
+.moiText-4.moiText-active .moiText_TickerItem:nth-child(2) {
+  animation: tick2 10s ease 5s infinite;
+}
+@keyframes tick2 {
+  0% {
+    opacity: 0;
+    transform: translateY(1.5em);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  55% {
+    opacity: 0;
+    transform: translateY(-1.5em);
+  }
+}
+
+.moiText-1 {
+  top: 0%;
+  max-width: 95%;
+  text-align: right;
+  transform: none;
+}
+.moiText-2 {
+  top: 22%;
+  max-width: 71%;
+}
+.moiText-3 {
+  top: 38%;
+  max-width: 61%;
+}
+.moiText-4 {
+  top: 60%;
+  max-width: 55%;
+}
+.moiText-5 {
+  top: 85%;
+  min-width: 65%;
+}
+
+
+/* Scene 6 */
+.Scene-6 {
+  display: grid;
+  align-content: center;
+  background: #000328;
+}
+
+.Credit {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.Credit-active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.Credit_Head {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: max(1.2rem, 3vw);
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  transform: translateY(0.72rem);
+  transition: transform 0.5s;
+}
+
+.Credit_Body {
+  margin-bottom: 0;
+  font-size: max(0.8rem, 2vw);
+  font-weight: 300;
+  text-align: center;
+  pointer-events: none;
+  transform: translateY(0.72rem);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.Credit_Checkbox {
+  display: none;
+}
+
+.Credit_Checkbox:checked ~ .Credit_Head {
+  transform: translateY(0);
+}
+.Credit-active > .Credit_Checkbox:checked ~ .Credit_Body {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.Credit_Label {
+  position: relative;
+  padding: 0.5rem;
+  margin: -0.5rem;
+  cursor: pointer;
+}
+
+.Credit_Heart {
+  width: 0.85em;
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.2;
+  overflow: visible;
+  transition: fill 1s, stroke 0.5s;
+}
+.Credit_Label:hover > .Credit_Heart,
+.Credit_Checkbox:checked ~ .Credit_Head > .Credit_Label > .Credit_Heart {
+  fill: #ff4054;
+  stroke: #ff4054;
+}
+
+.Credit_Link {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+  text-shadow:
+    -0.02em -0.02em transparent,
+    -0.02em  0.02em transparent,
+     0.02em -0.02em transparent,
+     0.02em  0.02em transparent;
+  transition: color 0.5s, text-shadow 0.5s;
+}
+.Credit_Link:hover {
+  color: #ff4054;
+  text-shadow:
+    -0.02em -0.02em currentColor,
+    -0.02em  0.02em currentColor,
+     0.02em -0.02em currentColor,
+     0.02em  0.02em currentColor;
+}
+.Credit_Checkbox:checked ~ .Credit_Head > .Credit_Link {
+  pointer-events: all;
+}
+
+
+/* Bug fix: Chrome Android 98.0.4758.87 */
+.Scene-2, .Scene-4, .Scene-6 {
+  opacity: 0.9999999; /* force create stacking context */
+}
