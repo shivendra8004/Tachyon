@@ -1,8 +1,11 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow: hidden;
 }
@@ -13,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -34,24 +37,23 @@ body {
   pointer-events: none;
 }
 
-
 .Parallax {
   --p: 120;
   height: 100vh;
   overflow: hidden;
   -webkit-perspective: calc(var(--p) * 1px);
-          perspective: calc(var(--p) * 1px);
+  perspective: calc(var(--p) * 1px);
   -webkit-perspective-origin-x: 100%;
-          perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
 }
 .Parallax_Scroll {
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   will-change: transform;
 }
 .Parallax_Preserve {
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .Parallax_Layer {
   --t: 0;
@@ -61,11 +63,12 @@ body {
   right: 0;
   bottom: 0;
   -webkit-transform-origin-x: 100%;
-          transform-origin-x: 100%;
-  -webkit-transform: translateZ(calc(var(--t) * 1px)) scale(calc(1 + (var(--t) * -1) / var(--p)));
-          transform: translateZ(calc(var(--t) * 1px)) scale(calc(1 + (var(--t) * -1) / var(--p)));
+  transform-origin-x: 100%;
+  -webkit-transform: translateZ(calc(var(--t) * 1px))
+    scale(calc(1 + (var(--t) * -1) / var(--p)));
+  transform: translateZ(calc(var(--t) * 1px))
+    scale(calc(1 + (var(--t) * -1) / var(--p)));
 }
-
 
 .Scene {
   position: relative;
@@ -73,8 +76,8 @@ body {
   padding: 5vw;
 }
 
-
-p, ul {
+p,
+ul {
   margin-top: 0;
   margin-bottom: 5vw;
 }
@@ -92,11 +95,9 @@ h2 {
   line-height: 1.2;
 }
 
-
 .Svg {
   display: block;
 }
-
 
 .Positioner {
   position: absolute;
@@ -104,12 +105,16 @@ h2 {
 
 /* Scene 1 */
 
-#s-mars-surface > g, #s-mars-shadow,
+#s-mars-surface > g,
+#s-mars-shadow,
 #s-orbiter-spacecraft {
   will-change: transform;
 }
 
-.Title, .SubTitle, .Lead, .Tip {
+.Title,
+.SubTitle,
+.Lead,
+.Tip {
   position: absolute;
   margin: 0;
   text-align: initial;
@@ -165,7 +170,7 @@ h2 {
 .Positioner-mars {
   left: 67vw;
   top: 66vh;
-  width:  calc(61vh + (100vmax - 100vh) * 0.3);
+  width: calc(61vh + (100vmax - 100vh) * 0.3);
   height: calc(61vh + (100vmax - 100vh) * 0.3);
   transform: translate(-50%, -50%);
 }
@@ -174,23 +179,37 @@ h2 {
   animation: Parallax_Layer-orbiter 50s linear infinite;
 }
 @keyframes Parallax_Layer-orbiter {
-  0%   { transform: translateZ(30px) scale(calc(1 + -30 / 120)); }
+  0% {
+    transform: translateZ(30px) scale(calc(1 + -30 / 120));
+  }
 
-  15%  { transform: translateZ(50px) scale(calc(1 + -50 / 120)); }
-  35%  { transform: translateZ(50px) scale(calc(1 + -50 / 120)); }
+  15% {
+    transform: translateZ(50px) scale(calc(1 + -50 / 120));
+  }
+  35% {
+    transform: translateZ(50px) scale(calc(1 + -50 / 120));
+  }
 
-  50%  { transform: translateZ(30px) scale(calc(1 + -30 / 120)); }
+  50% {
+    transform: translateZ(30px) scale(calc(1 + -30 / 120));
+  }
 
-  65%  { transform: translateZ(10px) scale(calc(1 + -10 / 120)); }
-  85%  { transform: translateZ(10px) scale(calc(1 + -10 / 120)); }
+  65% {
+    transform: translateZ(10px) scale(calc(1 + -10 / 120));
+  }
+  85% {
+    transform: translateZ(10px) scale(calc(1 + -10 / 120));
+  }
 
-  100% { transform: translateZ(30px) scale(calc(1 + -30 / 120)); }
+  100% {
+    transform: translateZ(30px) scale(calc(1 + -30 / 120));
+  }
 }
 
 .Positioner-orbiter {
   left: 67vw;
   top: 66vh;
-  width:  calc(61vh + (100vmax - 100vh) * 0.3);
+  width: calc(61vh + (100vmax - 100vh) * 0.3);
   height: calc(61vh + (100vmax - 100vh) * 0.3);
   transform: translate(-50%, -50%);
   transform-origin: 150%;
@@ -204,7 +223,6 @@ h2 {
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
-
 
 /* Scene 2 */
 .Scene-2 {
@@ -222,12 +240,13 @@ h2 {
   margin-bottom: 5vw;
 }
 
-#s-trajectory-earth, #s-trajectory-earthSurface,
-#s-trajectory-mars, #s-trajectory-marsSurface,
+#s-trajectory-earth,
+#s-trajectory-earthSurface,
+#s-trajectory-mars,
+#s-trajectory-marsSurface,
 #s-trajectory-spacecraft {
   will-change: transform;
 }
-
 
 /* Scene 3 */
 
@@ -245,11 +264,20 @@ h2 {
   height: 100%;
 }
 
-#s-launch-rocket, #s-launch-side1, #s-launch-side2,
-#s-launch-stand1, #s-launch-stand2, #s-launch-bigStand,
-#s-launch-tower1, #s-launch-tower2, #s-launch-stage,
-#s-launch-tower1Light, #s-launch-tower2Light,
-#s-launch-mainFlame, #s-launch-side1Flame, #s-launch-side2Flame {
+#s-launch-rocket,
+#s-launch-side1,
+#s-launch-side2,
+#s-launch-stand1,
+#s-launch-stand2,
+#s-launch-bigStand,
+#s-launch-tower1,
+#s-launch-tower2,
+#s-launch-stage,
+#s-launch-tower1Light,
+#s-launch-tower2Light,
+#s-launch-mainFlame,
+#s-launch-side1Flame,
+#s-launch-side2Flame {
   will-change: transform;
 }
 
@@ -260,7 +288,8 @@ h2 {
   transform-origin: 756px 765px;
 }
 
-#s-launch-tower1Light, #s-launch-tower2Light {
+#s-launch-tower1Light,
+#s-launch-tower2Light {
   transition: transform 0.3s;
 }
 #s-launch-tower1Light {
@@ -285,12 +314,10 @@ h2 {
   /* display: none; */
 }
 
-
 /* Scene 4 */
 .Scene-4 {
   background: #21146b;
 }
-
 
 /* Scene 5 */
 .Scene-5 {
@@ -298,7 +325,8 @@ h2 {
   min-height: 200vw;
 }
 
-.Svg-moiBg {}
+.Svg-moiBg {
+}
 
 .Svg-moiFg {
   position: absolute;
@@ -308,8 +336,10 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
-#s-moi-spacecraft, #s-moi-spacecraftFire,
-#s-moi-marsSurface, #s-moi-marsShadow {
+#s-moi-spacecraft,
+#s-moi-spacecraftFire,
+#s-moi-marsSurface,
+#s-moi-marsShadow {
   will-change: transform;
 }
 
@@ -442,7 +472,6 @@ h2 {
   min-width: 65%;
 }
 
-
 /* Scene 6 */
 .Scene-6 {
   display: grid;
@@ -518,27 +547,25 @@ h2 {
   color: inherit;
   text-decoration: none;
   pointer-events: none;
-  text-shadow:
-    -0.02em -0.02em transparent,
-    -0.02em  0.02em transparent,
-     0.02em -0.02em transparent,
-     0.02em  0.02em transparent;
+  text-shadow: -0.02em -0.02em transparent, -0.02em 0.02em transparent,
+    0.02em -0.02em transparent, 0.02em 0.02em transparent;
   transition: color 0.5s, text-shadow 0.5s;
 }
 .Credit_Link:hover {
   color: #ff4054;
-  text-shadow:
-    -0.02em -0.02em currentColor,
-    -0.02em  0.02em currentColor,
-     0.02em -0.02em currentColor,
-     0.02em  0.02em currentColor;
+  text-shadow: -0.02em -0.02em currentColor, -0.02em 0.02em currentColor,
+    0.02em -0.02em currentColor, 0.02em 0.02em currentColor;
 }
 .Credit_Checkbox:checked ~ .Credit_Head > .Credit_Link {
   pointer-events: all;
 }
 
-
 /* Bug fix: Chrome Android 98.0.4758.87 */
-.Scene-2, .Scene-4, .Scene-6 {
+.Scene-2,
+.Scene-4,
+.Scene-6 {
   opacity: 0.9999999; /* force create stacking context */
+}
+.tachyon-landing {
+  height: 30vw;
 }
