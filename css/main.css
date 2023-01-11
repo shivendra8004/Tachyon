@@ -567,5 +567,14 @@ h2 {
   opacity: 0.9999999; /* force create stacking context */
 }
 .tachyon-landing {
-  height: 30vw;
+  position: relative;
+  top: -6vw;
+  left: -3vw;
+  height: 46vw;
+}
+.juet-Landing {
+  height: 6vw;
+  position: relative;
+  top: -43vw;
+  left: 40vw;
 }
