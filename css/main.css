@@ -141,7 +141,7 @@ h2 {
 
 .Lead {
   left: 5vw;
-  top: max(55vmin - (50vmax - (100vmax - 100vmin)) * 0.2, 13rem);
+  top: max(50vmin - (50vmax - (100vmax - 100vmin)) * 0.2, 13rem);
   font-size: 1.625rem;
   font-weight: 300;
   width: calc(12ch + (100vmax - 100vh) * 0.3);
@@ -566,15 +566,41 @@ h2 {
 .Scene-6 {
   opacity: 0.9999999; /* force create stacking context */
 }
-.tachyon-landing {
+.tachyon-landing img {
   position: relative;
   top: -6vw;
   left: -3vw;
   height: 46vw;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 29.2rem;
+  position: fixed;
+  top: 1.2rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: auto 0;
+}
 .juet-Landing {
-  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.infinity-logo {
+  height: 2rem;
   position: relative;
-  top: -43vw;
-  left: 40vw;
+  left: -1.5vw;
+}
+.juet {
+  height: 3rem;
 }
