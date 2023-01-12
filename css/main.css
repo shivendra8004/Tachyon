@@ -621,4 +621,19 @@ nav a {
     gap: 2rem;
     margin: auto 0;
   }
+  .tachyon-landing {
+    width: 10vw;
+    display: flex;
+    gap: 0;
+  }
+  .tachyon-landing img {
+    height: 15rem;
+  }
+  .tachyon-landing .Lead {
+    width: 100%;
+    font-size: 1rem;
+    position: absolute;
+    top: 8.3rem;
+    left: 1.5rem;
+  }
 }
