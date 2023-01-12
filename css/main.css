@@ -14,9 +14,25 @@ html {
   font-size: calc(1.01vw + 1.43vh);
 }
 
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+@font-face {
+  font-family: myFont;
+  src: url("/resources/ABCWhyteInktrap-Bold-Trial.woff");
+}
+@font-face {
+  font-family: mybodyFont;
+  src: url("/resources/ABCWhyte-Book-Trial.woff");
+}
+
+@font-face {
+  font-family: mybodyFont1;
+  src: url("/resources/ABCWhyte-Bold-Trial.woff");
+}
+
 body {
   margin: 0;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Josefin Sans", sans-serif !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -574,12 +590,17 @@ nav {
   justify-content: space-between;
   position: fixed;
   z-index: 2000;
-  top: 0.8rem;
+
+  margin-top: 10px;
+  opacity: 80%;
+  height: 2.2rem;
 }
 nav a {
   text-decoration: none;
   color: #ff4054;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bolder;
 }
 .links {
   display: flex;
@@ -599,6 +620,7 @@ nav a {
   margin: 0;
   left: 5.5vw;
   top: max(50vmin - (50vmax - (100vmax - 100vmin)) * 0.2, 13rem);
+  font-family: myFont;
   font-size: 1.625rem;
   font-weight: 300;
   width: calc(12ch + (100vmax - 100vh) * 0.3);
@@ -607,17 +629,20 @@ nav a {
   display: flex;
   justify-content: right;
   position: fixed;
-  top: 0.3rem;
   right: 0.8rem;
   align-items: center;
+  /* margin-top: 20px; */
+  z-index: 2000;
+  text-align: center;
 }
 .infinity-logo {
-  height: 2rem;
+  height: 3rem;
   position: relative;
   left: -1.5vw;
 }
 .juet {
-  height: 3rem;
+  height: 2.2rem;
+  /* background-color: #fff; */
 }
 @media (max-width: 658px) {
   .juet-Landing {
@@ -654,6 +679,12 @@ nav a {
 
 .nav_wrapper {
   position: absolute;
+  display: flex;
+  margin-top: 20px;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
 }
 
 .main_content {
