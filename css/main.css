@@ -577,6 +577,7 @@ nav a {
   justify-content: space-between;
   gap: 2rem;
   margin: auto 0;
+  z-index: 100;
 }
 .tachyon-landing img {
   position: relative;
