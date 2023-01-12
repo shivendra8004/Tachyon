@@ -113,7 +113,6 @@ h2 {
 
 .Title,
 .SubTitle,
-.Lead,
 .Tip {
   position: absolute;
   margin: 0;
@@ -137,14 +136,6 @@ h2 {
   color: #ff4054;
   font-size: 1.625rem;
   font-weight: 700;
-}
-
-.Lead {
-  left: 5vw;
-  top: max(50vmin - (50vmax - (100vmax - 100vmin)) * 0.2, 13rem);
-  font-size: 1.625rem;
-  font-weight: 300;
-  width: calc(12ch + (100vmax - 100vh) * 0.3);
 }
 
 .Tip {
@@ -567,16 +558,12 @@ h2 {
 .Scene-6 {
   opacity: 0.9999999; /* force create stacking context */
 }
-.tachyon-landing img {
-  position: relative;
-  top: -6vw;
-  left: -3vw;
-  height: 46vw;
-}
-.navbar {
+
+/* =========================================== */
+
+nav {
   display: flex;
   justify-content: space-between;
-  gap: 29.2rem;
   position: fixed;
   top: 0.8rem;
 }
@@ -591,11 +578,28 @@ nav a {
   gap: 2rem;
   margin: auto 0;
 }
+.tachyon-landing img {
+  position: relative;
+  top: -6vw;
+  left: -3vw;
+  height: 46vw;
+}
+.Lead {
+  position: absolute;
+  margin: 0;
+  left: 5.5vw;
+  top: max(50vmin - (50vmax - (100vmax - 100vmin)) * 0.2, 13rem);
+  font-size: 1.625rem;
+  font-weight: 300;
+  width: calc(12ch + (100vmax - 100vh) * 0.3);
+}
 .juet-Landing {
   display: flex;
+  justify-content: right;
+  position: fixed;
+  top: 0.3rem;
+  right: 0.8rem;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
 }
 .infinity-logo {
   height: 2rem;
@@ -604,4 +608,17 @@ nav a {
 }
 .juet {
   height: 3rem;
+}
+@media (max-width: 658px) {
+  .juet-Landing {
+    position: fixed;
+    top: 0.8rem;
+    right: 0.5rem;
+  }
+  .links {
+    display: none;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: auto 0;
+  }
 }
