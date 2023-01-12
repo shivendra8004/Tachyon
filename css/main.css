@@ -41,6 +41,8 @@ body {
   --p: 120;
   height: 100vh;
   overflow: hidden;
+  /* position: absolute; */
+  z-index: 0;
   -webkit-perspective: calc(var(--p) * 1px);
   perspective: calc(var(--p) * 1px);
   -webkit-perspective-origin-x: 100%;
@@ -50,6 +52,7 @@ body {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   will-change: transform;
+  /* position: relative; */
 }
 .Parallax_Preserve {
   -webkit-transform-style: preserve-3d;
@@ -315,6 +318,11 @@ h2 {
   height: 100vh;
   min-height: 200vw;
 }
+/* Scene 5 */
+.Scene-7 {
+  height: 100vh;
+  min-height: 200vw;
+}
 
 .Svg-moiBg {
 }
@@ -565,6 +573,7 @@ nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 2000;
   top: 0.8rem;
 }
 nav a {
@@ -637,4 +646,16 @@ nav a {
     top: 8.3rem;
     left: 1.5rem;
   }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.nav_wrapper {
+  position: absolute;
+}
+
+.main_content {
+  position: absolute;
 }
