@@ -510,6 +510,17 @@ nav a {
   font-size: 0.9rem;
   font-weight: bolder;
 }
+.nav_wrapper {
+  position: absolute;
+  display: flex;
+  z-index: 2000;
+}
+.leftNav,
+.rightNav {
+  background-color: #29204a;
+  height: 80px;
+  width: 33%;
+}
 .links {
   display: flex;
   justify-content: space-between;
@@ -555,16 +566,6 @@ nav a {
 
 .wrapper {
   position: relative;
-}
-
-.nav_wrapper {
-  position: absolute;
-  display: flex;
-  margin-top: 20px;
-  height: 80px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2000;
 }
 
 .main_content {
