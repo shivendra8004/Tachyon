@@ -450,11 +450,11 @@ h2 {
     opacity: 0;
     transform: translateY(1.5em);
   }
-  5% {
+  1% {
     opacity: 1;
     transform: translateY(0rem);
   }
-  50% {
+  40% {
     opacity: 1;
     transform: translateY(0rem);
   }
@@ -472,20 +472,20 @@ h2 {
   position: relative;
 }
 .moiText-2 {
-  top: 22%;
-  max-width: 71%;
+  top: 19%;
+  max-width: 70%;
 }
 .moiText-3 {
-  top: 42%;
-  max-width: 61%;
+  top: 35%;
+  max-width: 58%;
 }
 .moiText-4 {
-  top: 62%;
-  max-width: 55%;
+  top: 53%;
+  max-width: 52%;
 }
 .moiText-5 {
-  top: 82%;
-  min-width: 65%;
+  top: 76%;
+  min-width: 63%;
 }
 /* Scene 6 */
 .Scene-6 {
@@ -643,6 +643,49 @@ nav a {
   height: 2.2rem;
   /* background-color: #fff; */
 }
+
+.wrapper {
+  position: relative;
+}
+
+.nav_wrapper {
+  position: absolute;
+  display: flex;
+  margin-top: 20px;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+}
+
+.main_content {
+  position: absolute;
+}
+
+.Reg_events {
+  text-align: center;
+}
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  border-bottom: solid 2px #fff;
+}
+.detaiBox {
+  display: flex;
+  gap: 10px;
+}
+.eventImage {
+  height: 260px;
+  margin: 8px 15px 0 0;
+}
+.detaiBox p {
+  font-size: 0.9rem;
+}
 @media (max-width: 658px) {
   .juet-Landing {
     position: fixed;
@@ -670,26 +713,4 @@ nav a {
     top: 8.3rem;
     left: 1.5rem;
   }
-}
-
-.wrapper {
-  position: relative;
-}
-
-.nav_wrapper {
-  position: absolute;
-  display: flex;
-  margin-top: 20px;
-  height: 80px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2000;
-}
-
-.main_content {
-  position: absolute;
-}
-
-.aim {
-  text-align: center;
 }
