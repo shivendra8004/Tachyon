@@ -5,16 +5,62 @@ body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif !important;
   background-image: url("/resources/bg.svg");
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+* {
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 h1 {
   font-family: "Josefin Sans", sans-serif !important;
   color: #fff !important;
 }
 
-* {
-  box-sizing: border-box;
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 75px;
+  text-align: center;
 }
-
+nav a {
+  text-decoration: none;
+  color: #ff4054;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+}
+.nav_wrapper {
+  position: absolute;
+}
+.leftNav,
+.rightNav {
+  display: flex;
+  justify-content: space-around;
+  z-index: 2000;
+  width: 33%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.leftNav {
+  border-radius: 0 0 250px 0;
+}
+.rightNav {
+  border-radius: 0 0 0 250px;
+}
+.centerNav {
+  background-color: transparent;
+  padding-top: 0.2rem;
+  width: 33%;
+}
+.centerNav img {
+  margin: 2px 22px;
+}
 .team-section {
   max-height: 200vh;
   padding: 70px 15px 30px;
@@ -146,63 +192,4 @@ h1 {
     flex-basis: calc(100%);
     max-width: calc(100%);
   }
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 2000;
-
-  margin-top: 22px;
-  opacity: 80%;
-  height: 2.2rem;
-}
-nav a {
-  text-decoration: none;
-  color: #ff4054;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.6rem;
-  font-weight: bolder;
-}
-.links {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: auto 0;
-  z-index: 100;
-}
-.tachyon-landing img {
-  position: relative;
-  top: -6vw;
-  left: -3vw;
-  height: 46vw;
-}
-.juet-Landing {
-  display: flex;
-  justify-content: right;
-  position: fixed;
-  right: 0.8rem;
-  align-items: center;
-  /* margin-top: 20px; */
-  z-index: 2000;
-  text-align: center;
-}
-.infinity-logo {
-  height: 80px;
-  position: relative;
-  left: -1.5vw;
-}
-.juet {
-  height: 75px;
-  /* background-color: #fff; */
-}
-.nav_wrapper {
-  position: fixed;
-  display: flex;
-  margin-top: 20px;
-  height: 80px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2000;
 }
