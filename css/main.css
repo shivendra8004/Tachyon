@@ -334,15 +334,6 @@ h2 {
   height: 200vh;
   min-height: 200vw;
 }
-/* Scene 5 */
-.Scene-7 {
-  height: 100vh;
-  min-height: 200vw;
-}
-
-.Svg-moiBg {
-}
-
 .Svg-moiFg {
   position: absolute;
   top: 50%;
