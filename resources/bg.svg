@@ -1,0 +1,395 @@
+<svg
+                  class="Svg Svg-bg"
+                  id="s-bg"
+                  viewBox="0 0 1000 1000"
+                  width="100%"
+                  height="100%"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <circle id="s-bg-circle" r="4" />
+                    <path
+                      id="s-bg-star"
+                      d="M0-5C1.4-5,1.17-2.5,1.84-1.83S5-1.4,5,0,2.51,1.17,1.84,1.84,1.4,5,0,5-1.16,2.51-1.83,1.84-5,1.4-5,0-2.5-1.16-1.83-1.83-1.4-5,0-5Z"
+                    />
+                    <g id="s-bg-glow">
+                      <circle r="6" fill="#2d225d" />
+                      <circle r="3" fill="#150e30" />
+                      <circle r="2" />
+                    </g>
+
+                    <use
+                      id="s-bg-circleSmViolet"
+                      xlink:href="#s-bg-circle"
+                      fill="#3c316d"
+                      transform="scale(0.75)"
+                    />
+                    <use
+                      id="s-bg-circleSmBlue"
+                      xlink:href="#s-bg-circle"
+                      fill="#735681"
+                      transform="scale(0.5)"
+                    />
+                    <use
+                      id="s-bg-circleSmCyan"
+                      xlink:href="#s-bg-circle"
+                      fill="#4e5eb7"
+                      transform="scale(0.5)"
+                    />
+                    <use
+                      id="s-bg-circleSmWhite"
+                      xlink:href="#s-bg-circle"
+                      fill="#5d8aac"
+                      transform="scale(0.5)"
+                    />
+                    <use
+                      id="s-bg-circleMdViolet"
+                      xlink:href="#s-bg-circle"
+                      fill="#3c316d"
+                      transform="scale(1.25)"
+                    />
+                    <use
+                      id="s-bg-circleMdBlue"
+                      xlink:href="#s-bg-circle"
+                      fill="#735681"
+                    />
+                    <use
+                      id="s-bg-circleMdCyan"
+                      xlink:href="#s-bg-circle"
+                      fill="#4e5eb7"
+                    />
+                    <use
+                      id="s-bg-circleMdWhite"
+                      xlink:href="#s-bg-circle"
+                      fill="#5d8aac"
+                    />
+                    <use
+                      id="s-bg-starSmBlue"
+                      xlink:href="#s-bg-star"
+                      fill="#735681"
+                      transform="scale(0.75)"
+                    />
+                    <use
+                      id="s-bg-starSmWhite"
+                      xlink:href="#s-bg-star"
+                      fill="#5d8aac"
+                      transform="scale(0.75)"
+                    />
+                    <use
+                      id="s-bg-starMdViolet"
+                      xlink:href="#s-bg-star"
+                      fill="#3c316d"
+                    />
+                    <use
+                      id="s-bg-starMdBlue"
+                      xlink:href="#s-bg-star"
+                      fill="#735681"
+                    />
+                    <use
+                      id="s-bg-starMdWhite"
+                      xlink:href="#s-bg-star"
+                      fill="#5d8aac"
+                    />
+                    <use
+                      id="s-bg-starLgBlue"
+                      xlink:href="#s-bg-star"
+                      fill="#735681"
+                      transform="scale(1.25)"
+                    />
+                    <use
+                      id="s-bg-glowBlue"
+                      xlink:href="#s-bg-glow"
+                      fill="#735681"
+                    />
+                    <use
+                      id="s-bg-glowWhite"
+                      xlink:href="#s-bg-glow"
+                      fill="#5d8aac"
+                    />
+                  </defs>
+
+                  <rect width="1000" height="1000" fill="#150e30" />
+
+                  <use xlink:href="#s-bg-circleSmViolet" x="12" y="2" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="249" y="32" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="365" y="27" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="434" y="72" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="908" y="5" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="45" y="229" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="18" y="306" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="41" y="324" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="89" y="267" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="115" y="286" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="653" y="224" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="689" y="214" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="734" y="254" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="661" y="293" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="98" y="418" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="318" y="387" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="255" y="431" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="613" y="428" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="732" y="418" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="881" y="341" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="898" y="377" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="953" y="416" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="222" y="531" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="147" y="567" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="442" y="528" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="561" y="518" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="919" y="515" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="853" y="559" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="440" y="607" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="558" y="597" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="778" y="594" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="80" y="612" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="47" y="710" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="268" y="708" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="387" y="698" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="746" y="694" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="901" y="709" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="103" y="748" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="118" y="786" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="681" y="739" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="339" y="833" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="959" y="800" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="983" y="821" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="886" y="840" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="911" y="858" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="265" y="872" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="347" y="900" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="310" y="910" />
+                  <use xlink:href="#s-bg-circleSmViolet" x="956" y="898" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="320" y="5" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="141" y="82" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="63" y="190" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="236" y="204" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="82" y="300" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="9" y="339" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="709" y="177" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="882" y="191" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="702" y="376" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="299" y="750" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="119" y="935" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="292" y="949" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="919" y="826" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="764" y="921" />
+                  <use xlink:href="#s-bg-circleSmBlue" x="937" y="936" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="462" y="66" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="201" y="181" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="161" y="182" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="124" y="206" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="846" y="168" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="806" y="170" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="727" y="287" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="300" y="361" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="196" y="436" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="543" y="401" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="995" y="395" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="828" y="436" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="345" y="510" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="180" y="550" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="978" y="510" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="630" y="545" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="370" y="580" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="821" y="575" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="24" y="617" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="654" y="616" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="173" y="690" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="805" y="689" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="6" y="730" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="457" y="724" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="701" y="765" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="273" y="839" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="991" y="788" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="153" y="957" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="193" y="955" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="799" y="945" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="838" y="942" />
+                  <use xlink:href="#s-bg-circleSmCyan" x="876" y="919" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="429" y="13" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="625" y="15" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="451" y="39" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="235" y="144" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="671" y="140" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="879" y="131" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="119" y="185" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="32" y="189" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="53" y="195" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="677" y="175" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="699" y="181" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="519" y="242" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="528" y="263" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="568" y="271" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="734" y="279" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="660" y="318" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="89" y="293" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="16" y="330" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="136" y="329" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="306" y="371" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="161" y="404" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="185" y="429" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="807" y="391" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="817" y="428" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="961" y="363" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="983" y="389" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="402" y="441" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="357" y="516" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="772" y="505" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="988" y="516" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="190" y="557" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="365" y="555" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="635" y="570" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="810" y="568" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="12" y="610" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="228" y="620" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="644" y="609" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="184" y="696" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="599" y="684" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="816" y="696" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="17" y="737" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="192" y="735" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="838" y="722" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="39" y="762" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="695" y="754" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="339" y="809" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="865" y="796" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="983" y="795" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="266" y="847" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="910" y="834" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="432" y="856" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="471" y="863" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="481" y="885" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="302" y="944" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="324" y="950" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="330" y="986" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="947" y="931" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="968" y="937" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="881" y="940" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="766" y="981" />
+                  <use xlink:href="#s-bg-circleSmWhite" x="120" y="994" />
+
+                  <use xlink:href="#s-bg-starSmBlue" x="281" y="25" />
+                  <use xlink:href="#s-bg-starSmBlue" x="396" y="105" />
+                  <use xlink:href="#s-bg-starSmBlue" x="61" y="170" />
+                  <use xlink:href="#s-bg-starSmBlue" x="124" y="170" />
+                  <use xlink:href="#s-bg-starSmBlue" x="75" y="222" />
+                  <use xlink:href="#s-bg-starSmBlue" x="705" y="157" />
+                  <use xlink:href="#s-bg-starSmBlue" x="720" y="207" />
+                  <use xlink:href="#s-bg-starSmBlue" x="167" y="388" />
+                  <use xlink:href="#s-bg-starSmBlue" x="645" y="374" />
+                  <use xlink:href="#s-bg-starSmBlue" x="811" y="375" />
+                  <use xlink:href="#s-bg-starSmBlue" x="129" y="469" />
+                  <use xlink:href="#s-bg-starSmBlue" x="411" y="477" />
+                  <use xlink:href="#s-bg-starSmBlue" x="760" y="470" />
+                  <use xlink:href="#s-bg-starSmBlue" x="240" y="656" />
+                  <use xlink:href="#s-bg-starSmBlue" x="589" y="649" />
+                  <use xlink:href="#s-bg-starSmBlue" x="871" y="657" />
+                  <use xlink:href="#s-bg-starSmBlue" x="188" y="751" />
+                  <use xlink:href="#s-bg-starSmBlue" x="355" y="752" />
+                  <use xlink:href="#s-bg-starSmBlue" x="834" y="738" />
+                  <use xlink:href="#s-bg-starSmBlue" x="280" y="918" />
+                  <use xlink:href="#s-bg-starSmBlue" x="295" y="970" />
+                  <use xlink:href="#s-bg-starSmBlue" x="926" y="905" />
+                  <use xlink:href="#s-bg-starSmBlue" x="876" y="957" />
+                  <use xlink:href="#s-bg-starSmBlue" x="940" y="955" />
+                  <use xlink:href="#s-bg-starSmWhite" x="732" y="187" />
+                  <use xlink:href="#s-bg-starSmWhite" x="802" y="195" />
+                  <use xlink:href="#s-bg-starSmWhite" x="129" y="276" />
+                  <use xlink:href="#s-bg-starSmWhite" x="197" y="931" />
+                  <use xlink:href="#s-bg-starSmWhite" x="266" y="938" />
+                  <use xlink:href="#s-bg-starSmWhite" x="871" y="849" />
+                  <use xlink:href="#s-bg-starSmWhite" x="911" y="925" />
+
+                  <use xlink:href="#s-bg-circleMdViolet" x="825" y="210" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="655" y="254" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="454" y="309" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="180" y="224" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="10" y="267" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="546" y="818" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="345" y="872" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="990" y="860" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="821" y="903" />
+                  <use xlink:href="#s-bg-circleMdViolet" x="176" y="915" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="645" y="7" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="742" y="11" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="85" y="38" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="422" y="36" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="270" y="189" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="916" y="175" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="954" y="388" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="243" y="417" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="156" y="428" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="788" y="428" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="386" y="518" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="931" y="529" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="218" y="557" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="782" y="567" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="70" y="597" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="614" y="608" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="213" y="697" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="844" y="697" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="757" y="708" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="46" y="739" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="730" y="938" />
+                  <use xlink:href="#s-bg-circleMdBlue" x="84" y="951" />
+                  <use xlink:href="#s-bg-circleMdCyan" x="865" y="169" />
+                  <use xlink:href="#s-bg-circleMdCyan" x="219" y="182" />
+                  <use xlink:href="#s-bg-circleMdCyan" x="780" y="943" />
+                  <use xlink:href="#s-bg-circleMdCyan" x="134" y="957" />
+                  <use xlink:href="#s-bg-circleMdWhite" x="693" y="253" />
+                  <use xlink:href="#s-bg-circleMdWhite" x="48" y="266" />
+                  <use xlink:href="#s-bg-circleMdWhite" x="620" y="292" />
+                  <use xlink:href="#s-bg-circleMdWhite" x="380" y="833" />
+                  <use xlink:href="#s-bg-circleMdWhite" x="951" y="858" />
+                  <use xlink:href="#s-bg-circleMdWhite" x="307" y="872" />
+
+                  <use xlink:href="#s-bg-starMdViolet" x="149" y="145" />
+                  <use xlink:href="#s-bg-starMdViolet" x="794" y="132" />
+                  <use xlink:href="#s-bg-starMdViolet" x="207" y="994" />
+                  <use xlink:href="#s-bg-starMdViolet" x="852" y="982" />
+                  <use xlink:href="#s-bg-starMdBlue" x="517" y="391" />
+                  <use xlink:href="#s-bg-starMdBlue" x="344" y="571" />
+                  <use xlink:href="#s-bg-starMdBlue" x="655" y="555" />
+                  <use xlink:href="#s-bg-starMdBlue" x="484" y="735" />
+                  <use xlink:href="#s-bg-starMdWhite" x="231" y="46" />
+                  <use xlink:href="#s-bg-starMdWhite" x="889" y="19" />
+                  <use xlink:href="#s-bg-starMdWhite" x="27" y="243" />
+                  <use xlink:href="#s-bg-starMdWhite" x="444" y="282" />
+                  <use xlink:href="#s-bg-starMdWhite" x="672" y="231" />
+                  <use xlink:href="#s-bg-starMdWhite" x="566" y="421" />
+                  <use xlink:href="#s-bg-starMdWhite" x="608" y="524" />
+                  <use xlink:href="#s-bg-starMdWhite" x="393" y="600" />
+                  <use xlink:href="#s-bg-starMdWhite" x="435" y="704" />
+                  <use xlink:href="#s-bg-starMdWhite" x="556" y="845" />
+                  <use xlink:href="#s-bg-starMdWhite" x="330" y="895" />
+                  <use xlink:href="#s-bg-starMdWhite" x="974" y="882" />
+
+                  <use xlink:href="#s-bg-starLgBlue" x="107" y="84" />
+                  <use xlink:href="#s-bg-starLgBlue" x="623" y="36" />
+                  <use xlink:href="#s-bg-starLgBlue" x="679" y="87" />
+
+                  <use xlink:href="#s-bg-glowBlue" x="799" y="55" />
+                  <use xlink:href="#s-bg-glowBlue" x="597" y="398" />
+                  <use xlink:href="#s-bg-glowBlue" x="576" y="547" />
+                  <use xlink:href="#s-bg-glowBlue" x="424" y="577" />
+                  <use xlink:href="#s-bg-glowBlue" x="403" y="728" />
+                  <use xlink:href="#s-bg-glowWhite" x="404" y="20" />
+                  <use xlink:href="#s-bg-glowWhite" x="219" y="201" />
+                  <use xlink:href="#s-bg-glowWhite" x="864" y="187" />
+                  <use xlink:href="#s-bg-glowWhite" x="936" y="371" />
+                  <use xlink:href="#s-bg-glowWhite" x="784" y="398" />
+                  <use xlink:href="#s-bg-glowWhite" x="138" y="411" />
+                  <use xlink:href="#s-bg-glowWhite" x="228" y="429" />
+                  <use xlink:href="#s-bg-glowWhite" x="945" y="515" />
+                  <use xlink:href="#s-bg-glowWhite" x="389" y="546" />
+                  <use xlink:href="#s-bg-glowWhite" x="610" y="577" />
+                  <use xlink:href="#s-bg-glowWhite" x="55" y="608" />
+                  <use xlink:href="#s-bg-glowWhite" x="772" y="695" />
+                  <use xlink:href="#s-bg-glowWhite" x="861" y="713" />
+                  <use xlink:href="#s-bg-glowWhite" x="217" y="727" />
+                  <use xlink:href="#s-bg-glowWhite" x="64" y="754" />
+                  <use xlink:href="#s-bg-glowWhite" x="781" y="923" />
+                  <use xlink:href="#s-bg-glowWhite" x="136" y="936" />
+                </svg>
