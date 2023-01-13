@@ -331,7 +331,7 @@ h2 {
 
 /* Scene 5 */
 .Scene-5 {
-  height: 100vh;
+  height: 200vh;
   min-height: 200vw;
 }
 /* Scene 5 */
@@ -476,18 +476,17 @@ h2 {
   max-width: 71%;
 }
 .moiText-3 {
-  top: 38%;
+  top: 42%;
   max-width: 61%;
 }
 .moiText-4 {
-  top: 60%;
+  top: 62%;
   max-width: 55%;
 }
 .moiText-5 {
-  top: 85%;
+  top: 82%;
   min-width: 65%;
 }
-
 /* Scene 6 */
 .Scene-6 {
   display: grid;
@@ -691,7 +690,6 @@ nav a {
   position: absolute;
 }
 
-
-.aim{
+.aim {
   text-align: center;
 }
