@@ -27,6 +27,12 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <script type="module" src="js/main.js"></script>
     <link rel="icon" href="./resources/tachyonlogo.png" />
@@ -8119,7 +8125,7 @@
                     <div class="info">
                       <div class="information">
                         <img src="resources/location.png" class="icon" alt="" />
-                        <p>Juet, Guna Pin: 473226</p>
+                        <p>Jaypee University Of Engineering & Technology</p>
                       </div>
                       <div class="information">
                         <img src="resources/email.png" class="icon" alt="" />
@@ -8146,28 +8152,40 @@
                         </a>
                       </div>
                     </div>
+                    <div class="location">
+                      <div id="map"></div>
+                    </div>
                   </div>
 
                   <div class="contact-form">
                     <form action="index.html" autocomplete="off">
                       <h3 class="title">Contact us</h3>
                       <div class="input-container">
-                        <input type="text" name="name" class="input" />
-                        <label for="">Username</label>
-                        <span>Username</span>
+                        <input type="text" name="name" class="input" required />
+                        <label for="">Full Name</label>
+                        <span>Full Name</span>
                       </div>
                       <div class="input-container">
-                        <input type="email" name="email" class="input" />
+                        <input
+                          type="email"
+                          name="email"
+                          class="input"
+                          required
+                        />
                         <label for="">Email</label>
                         <span>Email</span>
                       </div>
                       <div class="input-container">
-                        <input type="tel" name="phone" class="input" />
+                        <input type="tel" name="phone" class="input" required />
                         <label for="">Phone</label>
                         <span>Phone</span>
                       </div>
                       <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
+                        <textarea
+                          name="message"
+                          class="input"
+                          required
+                        ></textarea>
                         <label for="">Message</label>
                         <span>Message</span>
                       </div>
@@ -8181,5 +8199,19 @@
         </div>
       </div>
     </div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoic25laGVsNDUxMCIsImEiOiJja3p1Z3BzcHMwN3lhMm5ydXNoN2d6eGtoIn0.vmJMFNWp5kw7wExhl6GdgA";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/satellite-v9",
+        projection: "globe",
+        center: [77.162, 24.4355],
+        zoom: 15,
+      });
+      const marker1 = new mapboxgl.Marker({ color: "#ea4335" })
+        .setLngLat([77.162, 24.4355])
+        .addTo(map);
+    </script>
   </body>
 </html>
