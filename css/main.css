@@ -485,18 +485,6 @@ h2 {
   background: #000328;
 }
 
-.Credit {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
-  background-color: #fafafa;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Bug fix: Chrome Android 98.0.4758.87 */
 .Scene-2,
 .Scene-4,
@@ -636,6 +624,16 @@ nav a {
   }
 }
 /* =============================== Contact Us Css ===================================== */
+.Credit {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .form {
   width: 100%;
   max-width: 820px;
