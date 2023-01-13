@@ -574,7 +574,7 @@ nav a {
 .Reg_events {
   text-align: center;
 }
-.evt{
+.evt {
   text-align: center;
   width: 33%;
 }
@@ -807,11 +807,12 @@ textarea.input {
 }
 
 .social-media {
-  padding: 2rem 0 0 0;
+  margin-top: 2rem;
 }
 
 .social-media p {
   color: #fff;
+  margin-bottom: 1rem;
 }
 
 .social-icons {
@@ -824,7 +825,6 @@ textarea.input {
   border-radius: 5px;
   color: #fff;
   text-align: center;
-  line-height: 35px;
   margin-right: 0.5rem;
   transition: 0.3s;
 }
