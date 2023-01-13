@@ -3,7 +3,11 @@
 body {
     height: fit-content;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif !important;
+    background-image: url("/resources/bg.svg");
+}
+h1{
+    font-family: "Josefin Sans", sans-serif !important;   
 }
 
 *{
@@ -95,7 +99,7 @@ body {
 
 .team-section .team-items .item .inner .info h5 {
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     color: #ffffff;
 }
@@ -145,3 +149,63 @@ body {
         max-width: calc(100%);
     }
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2000;
+  
+    margin-top: 22px;
+    opacity: 80%;
+    height: 2.2rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: #ff4054;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: auto 0;
+    z-index: 100;
+  }
+  .tachyon-landing img {
+    position: relative;
+    top: -6vw;
+    left: -3vw;
+    height: 46vw;
+  }
+  .juet-Landing {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    right: 0.8rem;
+    align-items: center;
+    /* margin-top: 20px; */
+    z-index: 2000;
+    text-align: center;
+  }
+  .infinity-logo {
+    height: 80px;
+    position: relative;
+    left: -1.5vw;
+  }
+  .juet {
+    height: 75px;
+    /* background-color: #fff; */
+  }
+  .nav_wrapper {
+    position: fixed;
+    display: flex;
+    margin-top: 20px;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+  }
+  
