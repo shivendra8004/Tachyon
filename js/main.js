@@ -312,28 +312,24 @@ function step(now) {
     smokeY = -rocketTranslation;
     s3Rocket.style.setProperty(
       "transform",
-      `translate(${shake1[0] * shakeIntensity0}px, ${
-        -rocketTranslation + shake1[1] * shakeIntensity0
+      `translate(${shake1[0] * shakeIntensity0}px, ${-rocketTranslation + shake1[1] * shakeIntensity0
       }px)`
     );
 
     s3RocketSide1.style.setProperty(
       "transform",
-      `translate(${shake2[0] * shakeIntensity0 * 0.25}px, ${
-        shake2[1] * shakeIntensity0
+      `translate(${shake2[0] * shakeIntensity0 * 0.25}px, ${shake2[1] * shakeIntensity0
       }px)`
     );
     s3RocketSide2.style.setProperty(
       "transform",
-      `translate(${shake3[0] * shakeIntensity0 * 0.25}px, ${
-        shake3[1] * shakeIntensity0
+      `translate(${shake3[0] * shakeIntensity0 * 0.25}px, ${shake3[1] * shakeIntensity0
       }px)`
     );
 
     s3Stage.style.setProperty(
       "transform",
-      `translate(${shake2[0] * shakeIntensity}px, ${
-        shake2[1] * shakeIntensity
+      `translate(${shake2[0] * shakeIntensity}px, ${shake2[1] * shakeIntensity
       }px)`
     );
 
@@ -341,21 +337,18 @@ function step(now) {
     standRotation = cubicBezier(0.5, 0, 0.6, 1, standRotation);
     s3Stand1.style.setProperty(
       "transform",
-      `rotate(${standRotation * -7}deg) translate(${
-        shake2[0] * shakeIntensity
+      `rotate(${standRotation * -7}deg) translate(${shake2[0] * shakeIntensity
       }px, ${shake2[1] * shakeIntensity}px)`
     );
     s3Stand2.style.setProperty(
       "transform",
-      `rotate(${standRotation * 7}deg) translate(${
-        shake2[0] * shakeIntensity
+      `rotate(${standRotation * 7}deg) translate(${shake2[0] * shakeIntensity
       }px, ${shake2[1] * shakeIntensity}px)`
     );
 
     s3BigStand.style.setProperty(
       "transform",
-      `translate(${shake2[0] * shakeIntensity}px, ${
-        shake2[1] * shakeIntensity
+      `translate(${shake2[0] * shakeIntensity}px, ${shake2[1] * shakeIntensity
       }px)`
     );
 
@@ -392,18 +385,16 @@ function step(now) {
 
     s5Spacecraft.style.setProperty(
       "transform",
-      `rotate(${
-        -115 +
-        cubicBezier(0.2, 0, 0.5, 1, (p - 0.175) / 0.35) * 195 +
-        cubicBezier(0.2, 0, 0.8, 1, (p - 0.65) / 0.275) * -80
+      `rotate(${-115 +
+      cubicBezier(0.2, 0, 0.5, 1, (p - 0.175) / 0.35) * 195 +
+      cubicBezier(0.2, 0, 0.8, 1, (p - 0.65) / 0.275) * -80
       }deg)`
     );
 
     s5SpacecraftFire.style.setProperty(
       "transform",
-      `scale(${
-        cubicBezier(0.1, 0, 0.8, 1, (p - 0.425) / 0.03) -
-        cubicBezier(0.1, 0, 0.8, 1, (p - 0.65) / 0.05)
+      `scale(${cubicBezier(0.1, 0, 0.8, 1, (p - 0.425) / 0.03) -
+      cubicBezier(0.1, 0, 0.8, 1, (p - 0.65) / 0.05)
       })`
     );
 
@@ -595,3 +586,9 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+
+
+
+// for burger menu 
+
