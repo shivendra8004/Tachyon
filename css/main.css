@@ -518,7 +518,7 @@ nav a {
   display: flex;
   justify-content: space-around;
   z-index: 2000;
-  width: 33%;
+  width: 30%;
   align-items: center;
   background-color: rgba(23, 45, 72, 0.8);
 }
