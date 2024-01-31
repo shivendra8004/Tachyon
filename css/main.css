@@ -982,3 +982,107 @@ textarea.input {
     padding: 0.45rem 1.2rem;
   }
 }
+@media screen and (min-aspect-ratio: 39/20) {
+  .Tip {
+    display: none;
+  }
+}
+
+.Positioner-mars {
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.Parallax_Layer-orbiter {
+  animation: Parallax_Layer-orbiter 50s linear infinite;
+}
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  .Title {
+    font-size: 2rem;
+  }
+
+  .SubTitle {
+    font-size: 1.25rem;
+  }
+
+  .Tip {
+    font-size: 0.8rem;
+  }
+
+  /* Add more styles for smaller screens as needed */
+}
+@media screen and (max-width: 768px) {
+  .Svg-trajectory {
+    max-width: 100%; /* Adjusted max-width for smaller screens */
+    margin-top: 0;
+    margin-bottom: 3vw; /* Adjusted margin for smaller screens */
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+@media screen and (max-width: 480px) {
+  .Svg-trajectory {
+    margin-bottom: 2vw; /* Further adjusted margin for even smaller screens */
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+@media screen and (min-width: 370px)  and (max-width: 768px) {
+  .Svg-moiFg {
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .moiText {
+    max-width: 80%;
+    padding: 3vw;
+  }
+
+  .moiText > h2 {
+    font-size: max(2rem, 5vw);
+  }
+
+  .moiText > h3 {
+    font-size: max(1.2rem, 3vw);
+  }
+
+  .moiText p {
+    font-size: max(0.7rem, 1.8vw);
+  }
+  .sponsors marquee img{
+    height: 100px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .moiText {
+    max-width: 100%;
+    padding: 2vw;
+  }
+
+  .moiText > h2 {
+    font-size: max(1.2rem, 2vw);
+  }
+
+  .moiText > h3 {
+    font-size: max(0.8rem, 2vw);
+  }
+
+  .moiText p {
+    font-size: max(0.4rem, 1.2vw);
+  }
+
+  .sponsors marquee img{
+    height: 100px;
+    padding: 0 20px;
+  }
+
+}
+
